@@ -12,7 +12,6 @@ export class Department extends Component{
         super(props);
         this.state = {deps:[], addModalShow:false, editModelShow:false}
     }
-
     refreshList(){
         fetch(process.env.REACT_APP_API + 'department')
         .then(response => response.json())
